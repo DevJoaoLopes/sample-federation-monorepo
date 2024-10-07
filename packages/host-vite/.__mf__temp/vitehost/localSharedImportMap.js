@@ -80,7 +80,7 @@
                 {
                   entryGlobalName: "rsbuildRemote",
                   name: "rsbuildRemote",
-                  type: "module",
+                  type: "var",
                   entry: "http://localhost:4002/remoteEntry.js",
                 }
           

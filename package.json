@@ -8,9 +8,11 @@
       "dev:host-vite": "yarn workspace host-vite dev",
       "dev:rsbuild-remote": "yarn workspace rsbuild-remote dev",
       "dev:vite-remote": "yarn workspace vite-remote dev",
+      "start": "concurrently \"yarn dev:rsbuild-remote\" \"yarn dev:vite-remote\" \"yarn dev:host-vite\"",
       "build": "yarn workspaces run build"
     },
     "dependencies": {
-      "@module-federation/vite": "1.1.1"
+      "@module-federation/vite": "1.1.1",
+      "concurrently": "9.0.1"
     }
   }
